@@ -1,13 +1,15 @@
-# Astro & Tailwind CSS Starter Kit
+# Easypeasy Landing Page
 
-by https://lexingtonthemes.com
+Take a look at our fucking landing page.
 
-## Template Integrations
-- @astrojs/tailwind - https://docs.astro.build/en/guides/integrations-guide/tailwind/
-- @astrojs/image - https://docs.astro.build/en/guides/integrations-guide/image/
-- @astrojs/sitemap - https://docs.astro.build/en/guides/integrations-guide/sitemap/
-- Astrolib SEO - https://github.com/onwidget/astrolib/tree/main/packages/seo
-- Astro compress - https://github.com/NikolaRHristov/astro-compress#readme
+## Installation
+
+First you need to install pnpm package manager.
+
+Then you run pnpm install
+
+And then you run pnpm run dev
+
 ## Template Structure
 
 Inside of your Astro project, you'll see the following folders and files:
@@ -27,19 +29,14 @@ There's nothing special about `src/components/`, but that's where we like to put
 
 Any static assets, like images, can be placed in the `public/` directory.
 
-## Commands
+## Astro & Tailwind CSS Starter Kit
 
-All commands are run from the root of the project, from a terminal:
+by https://lexingtonthemes.com
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
+## Template Integrations
 
-## Want to learn more?
-
-Feel free to check Astroäs [documentation](https://docs.astro.build)
+- @astrojs/tailwind - https://docs.astro.build/en/guides/integrations-guide/tailwind/
+- @astrojs/image - https://docs.astro.build/en/guides/integrations-guide/image/
+- @astrojs/sitemap - https://docs.astro.build/en/guides/integrations-guide/sitemap/
+- Astrolib SEO - https://github.com/onwidget/astrolib/tree/main/packages/seo
+- Astro compress - https://github.com/NikolaRHristov/astro-compress#readme
