@@ -11,7 +11,6 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "@astrojs/image": "^0.4.0",
     "@astrojs/tailwind": "^3.0.1",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.8",
@@ -19,6 +18,7 @@
     "astro": "^2.0.12"
   },
   "dependencies": {
+    "@astro-community/astro-embed-youtube": "^0.2.2",
     "@astrojs/partytown": "^1.0.0",
     "@astrojs/sitemap": "^1.0.0",
     "@astrolib/seo": "^0.3.0",
