@@ -3,6 +3,10 @@ const items = [
 	{ id: 1, description: "Item 1" },
 	{ id: 2, description: "Item 2" },
 ];
+
+function toggleHidden(element: HTMLElement) {
+	element.classList.toggle("hidden");
+}
 ---
 
 <section id="features">
@@ -45,9 +49,14 @@ const items = [
 								recommended it to you!
 							</div>
 							<div class="flex justify-end mt-2">
-								<a href="#" class="text-right">see what people are sayin -></a>
+								<a href="/testimonials" class="text-right"
+									>see what people are sayin -></a
+								>
 							</div>
-						</div><div>
+							<div></div>
+						</div>
+
+						<div>
 							<div>
 								<p
 									class="mt-4 text-lg font-semibold leading-6 text-black font-display tracking-tight"
@@ -66,7 +75,5 @@ const items = [
 				</div>
 			</div>
 		</div>
-
-		{}
 	</div>
 </section>

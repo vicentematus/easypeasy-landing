@@ -1,7 +1,14 @@
+---
+interface Props {
+	type: boolean;
+	description: string;
+}
+
+const { type, description } = Astro.props;
+---
+
 <section
-	class="relative mx-auto w-full lg:px-16 max-w-4xl md:px-12 items-center px-8"
-	id="bundle"
-	aria-label="bundle"
+	class="relative mx-auto w-full lg:px-16 max-w-4xl md:px-12 items-center px-8 mt-10"
 >
 	<div class="rounded-3xl overflow-hidden mx-auto">
 		<div class="relative px-4 py-2 mx-auto max-w-7xl sm:px-6 md:px-4">
@@ -10,11 +17,14 @@
 					<h2
 						class="w-full mt-4 text-2xl font-semibold tracking-tight font-display"
 					>
-						so yeah, it’s a completely free book that’s works differently and
-						actually works, and sending you good vibes :o)
+						{
+							type === true
+								? description
+								: "so yeah, it’s a completely free book that’s works differently and actually works, and sending you good vibes :o)"
+						}
 					</h2>
 				</div>
-				<div class="flex justify-center gap-3 mt-10 flex-col sm:flex-row">
+				<div class="flex justify-center gap-3 mt-6 flex-col sm:flex-row">
 					<a
 						class="items-center justify-center font-medium rounded-xl text-black focus-visible:outline-white focus:outline-none inline-flex bg-white border-2 duration-200 focus-visible:ring-black hover:bg-transparent lg:w-auto px-16 py-3 text-center w-full border-black"
 						href="https://easypeasymethod.org/"

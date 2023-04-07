@@ -1,0 +1,144 @@
+---
+import BaseLayout from "$layouts/BaseLayout.astro";
+import Footer from "$components/global/Footer.astro";
+import Cta from "$components/global/Cta.astro";
+---
+
+<main class="max-w-3xl mx-auto">
+  <header>
+    <p class="text-3xl text-black">
+      easypeasy <svg
+        class="inline"
+        xmlns="http://www.w3.org/2000/svg"
+        width="148"
+        height="148"
+        viewBox="0 0 36 36"
+        ><path
+          fill="#269"
+          d="M32 7H4a4 4 0 0 0-4 4v15a4 4 0 0 0 4 4h11.416c.52.596 1.477 1 2.584 1s2.065-.404 2.584-1H32a4 4 0 0 0 4-4V11a4 4 0 0 0-4-4z"
+        ></path><path
+          fill="#292F33"
+          d="M20 27a2 2 0 0 1-4 0V9a2 2 0 0 1 4 0v18z"></path><path
+          fill="#99AAB5"
+          d="M18 26a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v18z"
+        ></path><path
+          fill="#E1E8ED"
+          d="M18 26c-.999-1.998-3.657-2-4-2c-2 0-5 2-8 2c-1 0-2-.896-2-2V8c0-1.104 1-2 2-2c3.255 0 6-2 8-2c3 0 4 1.896 4 3v19z"
+        ></path><path
+          fill="#99AAB5"
+          d="M34 26a2 2 0 0 1-2 2H20a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v18z"
+        ></path><path
+          fill="#CCD6DD"
+          d="M18 26c.999-1.998 3.657-2 4-2c2 0 5 2 8 2c1 0 2-.896 2-2V8c0-1.104-1-2-2-2c-3.256 0-6-2-8-2c-3 0-4 1.896-4 3v19z"
+        ></path>
+      </svg>
+    </p>
+    <h1 class="text-gray-900 text-8xl">backstage</h1>
+  </header>
+  <nav class="text-gray-800 text-lg">
+    <ul class="flex gap-x-4 font-medium">
+      <li class="text-2xl"><a href="#outline">Outline</a></li>
+      <li class="text-2xl"><a href="#contacting">Contacting</a></li>
+      <li class="text-2xl">
+        <a href="#getting-involved">Getting Involved</a>
+      </li>
+      <li class="text-2xl"><a href="#media">Media</a></li>
+
+      <li class="text-2xl"><a href="#history">History</a></li>
+    </ul>
+  </nav>
+
+  <section class="mt-8 lg:mt-16" id="outline">
+    <header><h2 class="text-3xl font-semibold">Outline</h2></header>
+    <p class="text-lg">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto sequi
+      ducimus dignissimos sunt rem, totam dolor maiores nemo suscipit voluptate
+      optio, quae officia a aut in recusandae amet minus iure? Lorem ipsum dolor
+      sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint
+      ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim
+      cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+      aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud
+      officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
+      reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
+      voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem
+      sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur
+      duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
+      consectetur et est culpa et culpa duis.
+    </p>
+  </section>
+
+  <section class="mt-8 lg:mt-16 space-y-2" id="contacting">
+    <header><h2 class="text-3xl font-semibold">Contacting</h2></header>
+    <p class="text-lg">
+      for pretty much everything, contact hello@easypeasymethod.org
+    </p>
+
+    <p class="text-lg">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
+      tempora voluptate assumenda mollitia aperiam, qui dolores esse quisquam
+      exercitationem, iure impedit. Veritatis voluptates cumque distinctio,
+      ipsum voluptatem esse debitis soluta!
+    </p>
+  </section>
+
+  <section
+    class="mt-8 lg:mt-16 space-y-2 flex flex-col md:flex-row"
+    id="getting-involved"
+  >
+    <div>
+      <header>
+        <h2 class="text-3xl font-semibold">Getting Involved</h2>
+      </header>
+      <p class="text-lg">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore qui
+        aperiam ipsum, dolores earum consequuntur aliquam, aliquid possimus
+        illum consequatur debitis sunt! Earum commodi ex, iste deleniti quisquam
+        neque?
+      </p>
+    </div>
+    <div>
+      <div class="h-96 w-96 bg-pink-900"></div>
+    </div>
+  </section>
+
+  <section class="mt-8 lg:mt-16" id="media">
+    <header><h2 class="text-3xl font-semibold">Media</h2></header>
+    <p class="text-lg">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto sequi
+      ducimus dignissimos sunt rem, totam dolor maiores nemo suscipit voluptate
+      optio, quae officia a aut in recusandae amet minus iure? Lorem ipsum dolor
+      sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint
+      ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim
+      cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+      aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud
+      officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
+      reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
+      voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem
+      sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur
+      duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
+      consectetur et est culpa et culpa duis.
+    </p>
+  </section>
+
+  <section class="mt-8 lg:mt-16" id="history">
+    <header><h2 class="text-3xl font-semibold">History</h2></header>
+    <p class="text-lg">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto sequi
+      ducimus dignissimos sunt rem, totam dolor maiores nemo suscipit voluptate
+      optio, quae officia a aut in recusandae amet minus iure? Lorem ipsum dolor
+      sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint
+      ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim
+      cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+      aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud
+      officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
+      reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
+      voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem
+      sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur
+      duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
+      consectetur et est culpa et culpa duis.
+    </p>
+  </section>
+</main>
+
+<Cta type={true} description="Free youself from pain." />
+<Footer />

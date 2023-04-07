@@ -1,0 +1,138 @@
+---
+import TestimonialCard from "$components/TestimonialCard/TestimonialCard.astro";
+import Footer from "$components/global/Footer.astro";
+import Cta from "$components/global/Cta.astro";
+const testimonialsArray = [
+  {
+    id: 0,
+    timestamp: "",
+    post_title:
+      "This book broke the chains of PMO and opened up a whole new life for me.",
+    testimonial:
+      "This book broke the chains of PMO and opened up a whole new life for me.",
+    user_name: "John Doe",
+    posted_on: "REDDIT",
+    avatar: "img/reddit/avatar.webp",
+    link: "https://www.reddit.com/r/pmohackbook/comments/g4fvp2/this_book_broke_the_chains_of_pmo_and_opened_up_a/?utm_source=share&utm_medium=web2x&context=3",
+  },
+  {
+    id: 1,
+    timestamp: "",
+    link: "https://www.reddit.com/r/pmohackbook/comments/g4fvp2/this_book_broke_the_chains_of_pmo_and_opened_up_a/",
+    post_title:
+      "This book broke the chains of PMO and opened up a whole new life for me.",
+    testimonial: "It is truly the best resource a PMOer can read to quit imo.",
+    user_name: "ProfessorMikeDonovan",
+    posted_on: "REDDIT",
+    avatar: "img/reddit/avatar.webp",
+  },
+
+  {
+    id: 2,
+    timestamp: "",
+    post_title: "This is not NoFap, we do not abstain.",
+    testimonial: "This is not NoFap, we do not abstain.",
+    user_name: "ObjectConscious",
+    posted_on: "REDDIT",
+    avatar: "img/reddit/avatar.webp",
+    link: "https://www.reddit.com/r/pmohackbook/comments/t8x25o/this_is_not_nofap_we_do_not_abstain/",
+  },
+
+  {
+    id: 3,
+    timestamp: "",
+    link: "https://www.reddit.com/r/pmohackbook/comments/g4fvp2/this_book_broke_the_chains_of_pmo_and_opened_up_a/",
+    post_title:
+      "This book broke the chains of PMO and opened up a whole new life for me.",
+    testimonial: "It is truly the best resource a PMOer can read to quit imo.",
+    user_name: "ProfessorMikeDonovan",
+    posted_on: "REDDIT",
+    avatar: "img/reddit/avatar.webp",
+  },
+
+  {
+    id: 4,
+    timestamp: "",
+    post_title: "This is not NoFap, we do not abstain.",
+    testimonial: "This is not NoFap, we do not abstain.",
+    user_name: "ObjectConscious",
+    posted_on: "REDDIT",
+    avatar: "img/reddit/avatar.webp",
+    link: "https://www.reddit.com/r/pmohackbook/comments/t8x25o/this_is_not_nofap_we_do_not_abstain/",
+  },
+
+  {
+    id: 3,
+    timestamp: "",
+    link: "https://www.reddit.com/r/pmohackbook/comments/g4fvp2/this_book_broke_the_chains_of_pmo_and_opened_up_a/",
+    post_title:
+      "This book broke the chains of PMO and opened up a whole new life for me.",
+    testimonial: "It is truly the best resource a PMOer can read to quit imo.",
+    user_name: "ProfessorMikeDonovan",
+    posted_on: "REDDIT",
+    avatar: "img/reddit/avatar.webp",
+  },
+
+  {
+    id: 4,
+    timestamp: "",
+    post_title: "This is not NoFap, we do not abstain.",
+    testimonial: "This is not NoFap, we do not abstain.",
+    user_name: "ObjectConscious",
+    posted_on: "REDDIT",
+    avatar: "img/reddit/avatar.webp",
+    link: "https://www.reddit.com/r/pmohackbook/comments/t8x25o/this_is_not_nofap_we_do_not_abstain/",
+  },
+
+  {
+    id: 3,
+    timestamp: "",
+    link: "https://www.reddit.com/r/pmohackbook/comments/g4fvp2/this_book_broke_the_chains_of_pmo_and_opened_up_a/",
+    post_title:
+      "This book broke the chains of PMO and opened up a whole new life for me.",
+    testimonial: "It is truly the best resource a PMOer can read to quit imo.",
+    user_name: "ProfessorMikeDonovan",
+    posted_on: "REDDIT",
+    avatar: "img/reddit/avatar.webp",
+  },
+
+  {
+    id: 4,
+    timestamp: "",
+    post_title: "This is not NoFap, we do not abstain.",
+    testimonial: "This is not NoFap, we do not abstain.",
+    user_name: "ObjectConscious",
+    posted_on: "REDDIT",
+    avatar: "img/reddit/avatar.webp",
+    link: "https://www.reddit.com/r/pmohackbook/comments/t8x25o/this_is_not_nofap_we_do_not_abstain/",
+  },
+];
+---
+
+<section>
+  <div class="text-center">
+    <h1 class="text-3xl font-medium">Learn about all testimonials</h1>
+    <p>See what people are saying easypeasy.</p>
+  </div>
+  <div class="grid grid-cols-12 gap-2">
+    {
+      testimonialsArray.map((testimonial) => (
+        <TestimonialCard
+          id={testimonial.id}
+          posted_on={testimonial.posted_on}
+          link={testimonial.link}
+          avatar={testimonial.avatar}
+          post_title={testimonial.post_title}
+          user_name={testimonial.user_name}
+          testimonial={testimonial.testimonial}
+          timestamp={testimonial.timestamp}
+        />
+      ))
+    }
+  </div>
+  <Cta
+    type={true}
+    description="Trust the process. Let go the chains of addiction and take action."
+  />
+  <Footer />
+</section>
