@@ -1,7 +1,10 @@
 ---
+import { AstroSeo } from "@astrolib/seo";
+import SubpageLayout from "$components/layouts/subpages/SubpageLayout.astro";
 import TestimonialCard from "$components/TestimonialCard/TestimonialCard.astro";
 import Footer from "$components/global/Footer.astro";
 import Cta from "$components/global/Cta.astro";
+
 const testimonialsArray = [
   {
     id: 0,
@@ -109,30 +112,67 @@ const testimonialsArray = [
 ];
 ---
 
-<section>
-  <div class="text-center">
-    <h1 class="text-3xl font-medium">Learn about all testimonials</h1>
-    <p>See what people are saying easypeasy.</p>
-  </div>
-  <div class="grid grid-cols-12 gap-2">
-    {
-      testimonialsArray.map((testimonial) => (
-        <TestimonialCard
-          id={testimonial.id}
-          posted_on={testimonial.posted_on}
-          link={testimonial.link}
-          avatar={testimonial.avatar}
-          post_title={testimonial.post_title}
-          user_name={testimonial.user_name}
-          testimonial={testimonial.testimonial}
-          timestamp={testimonial.timestamp}
-        />
-      ))
-    }
-  </div>
-  <Cta
-    type={true}
-    description="Trust the process. Let go the chains of addiction and take action."
-  />
-  <Footer />
-</section>
+<AstroSeo
+  title="Testimonials - Easypeasy"
+  description="See what people are saying about Easypeasy method. All their information about testimonials on of the method."
+  canonical="https://www.easypeasymethod.org"
+  openGraph={{
+    url: "https://www.easypeasymethod.org",
+    title: "Testimonials - Easypeasy",
+    description:
+      "See what people are saying about Easypeasy method. All their information about testimonials about the method.",
+    images: [
+      {
+        url: "https://www.michaelandreuzza.com/opengraph/social-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Social open graph",
+        type: "image/jpeg",
+      },
+      {
+        url: "https://www.michaelandreuzza.com/opengraph/twitter-og.jpg",
+        width: 4096,
+        height: 4096,
+        alt: "Twitter open graph",
+        type: "image/jpeg",
+      },
+      { url: "https://www.michaelandreuzza.com/opengraph/social-og.jpg" },
+      { url: "https://www.michaelandreuzza.com/opengraph/twitter-og.jpg" },
+    ],
+    site_name: "YourSitesName",
+  }}
+  twitter={{
+    handle: "@Mike_Andreuzza",
+    site: "@site",
+    cardType: "summary_large_image",
+  }}
+/>
+
+<SubpageLayout>
+  <section>
+    <div class="text-center">
+      <h1 class="text-4xl font-medium">Learn about all testimonials</h1>
+      <p class="text-lg">See what people are saying about easypeasy.</p>
+    </div>
+    <div class="grid grid-cols-12 gap-2 mt-8">
+      {
+        testimonialsArray.map((testimonial) => (
+          <TestimonialCard
+            id={testimonial.id}
+            posted_on={testimonial.posted_on}
+            link={testimonial.link}
+            avatar={testimonial.avatar}
+            post_title={testimonial.post_title}
+            user_name={testimonial.user_name}
+            testimonial={testimonial.testimonial}
+            timestamp={testimonial.timestamp}
+          />
+        ))
+      }
+    </div>
+    <Cta
+      type={true}
+      description="Trust the process. Let go the chains of addiction and take action."
+    />
+  </section>
+</SubpageLayout>

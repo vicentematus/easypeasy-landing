@@ -23,11 +23,10 @@ const {
 function convert_string(str: string) {
   return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
 }
-console.log({ post_title });
 ---
 
 <figure
-  class="border-2 rounded-md border-black col-span-12 md:col-span-6 lg:col-span-4 px-4 py-2"
+  class="border-2 rounded-md border-black col-span-full md:col-span-6 lg:col-span-4 px-4 py-2"
 >
   <blockquote>
     <p class="text-2xl">
@@ -35,8 +34,8 @@ console.log({ post_title });
       <span class="text-gray-400">"</span>
     </p>
   </blockquote>
-  <figcaption class="inline-flex items-center">
-    <span> <img src={avatar} class="h-8 w-8" /></span>
+  <figcaption class="inline-flex items-center space-x-2 mt-2">
+    <span class="flex-shrink-0"> <img src={avatar} class="h-8 w-8" /></span>
     <p>
       {user_name} said this on <a
         href={link}
