@@ -4,14 +4,12 @@ import Footer from "$components/global/Footer.astro";
 import Cta from "$components/global/Cta.astro";
 ---
 
-<main class="max-w-3xl mx-auto">
+<main class="max-w-3xl mx-auto px-2">
   <header>
     <p class="text-3xl text-black">
       easypeasy <svg
-        class="inline"
+        class="inline w-14 h-14"
         xmlns="http://www.w3.org/2000/svg"
-        width="148"
-        height="148"
         viewBox="0 0 36 36"
         ><path
           fill="#269"
@@ -33,110 +31,217 @@ import Cta from "$components/global/Cta.astro";
         ></path>
       </svg>
     </p>
-    <h1 class="text-gray-900 text-8xl">backstage</h1>
+    <h1 class="text-gray-900 text-6xl md:text-8xl">backstage</h1>
   </header>
-  <nav class="text-gray-800 text-lg">
-    <ul class="flex gap-x-4 font-medium">
-      <li class="text-2xl"><a href="#outline">Outline</a></li>
-      <li class="text-2xl"><a href="#contacting">Contacting</a></li>
-      <li class="text-2xl">
-        <a href="#getting-involved">Getting Involved</a>
+  <nav class="text-gray-900 text-xs lg:text-lg">
+    <ul class="flex gap-x-4 font-medium text-xs">
+      <li class=""><a href="#outline">outline</a></li>
+      <li class=""><a href="#contacting">contacting</a></li>
+      <li class="">
+        <a href="#getting-involved">getting involved</a>
       </li>
-      <li class="text-2xl"><a href="#media">Media</a></li>
+      <li class=""><a href="#media">media</a></li>
 
-      <li class="text-2xl"><a href="#history">History</a></li>
+      <li class=""><a href="#history">history</a></li>
     </ul>
   </nav>
 
-  <section class="mt-8 lg:mt-16" id="outline">
+  <section class="mt-12 lg:mt-16" id="outline">
     <header><h2 class="text-3xl font-semibold">Outline</h2></header>
-    <p class="text-lg">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto sequi
-      ducimus dignissimos sunt rem, totam dolor maiores nemo suscipit voluptate
-      optio, quae officia a aut in recusandae amet minus iure? Lorem ipsum dolor
-      sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint
-      ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim
-      cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
-      aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud
-      officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
-      reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
-      voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem
-      sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur
-      duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-      consectetur et est culpa et culpa duis.
-    </p>
+    <div class="text-lg space-y-4">
+      <p class="text-lg">
+        easypeasy is a free and open source rewrite of Allen Carr's EasyWay to
+        Stop Smoking adapted for pornography. It works differently from other
+        ways of quitting addictions that typically rely on willpower.
+      </p>
+
+      <p class="text-lg">
+        Willpower is anything involving counting, blocking, rewarding, dieting
+        or punishing yourself, only increasing the fear that you're being
+        deprived of something you enjoy, and that life won't be the same without
+        it.
+      </p>
+
+      <p class="text-lg">
+        As opposed to counting days, easypeasy deconstructs the reasons why
+        people continue using pornography in the first place -- such as porn
+        being relaxing or an aiding in concentration. By removing these reasons
+        first, you quit feeling like you've been cured of a terrible disease
+        instead of deprived.
+      </p>
+
+      <p class="text-lg">
+        It's suitable for anyon e, for any amount of pornography consumption,
+        and you should continue using pornography until you've finished the book
+        completely.
+      </p>
+
+      <p class="text-lg">What have you got to lose!</p>
+    </div>
   </section>
 
-  <section class="mt-8 lg:mt-16 space-y-2" id="contacting">
+  <section class="mt-8 lg:mt-16 space-y-4" id="contacting">
     <header><h2 class="text-3xl font-semibold">Contacting</h2></header>
-    <p class="text-lg">
-      for pretty much everything, contact hello@easypeasymethod.org
-    </p>
+    <div class="text-lg space-y-4">
+      <p class="text-lg">
+        Nobody likes email, so let's try minimising the time we spend on it.
+      </p>
 
-    <p class="text-lg">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
-      tempora voluptate assumenda mollitia aperiam, qui dolores esse quisquam
-      exercitationem, iure impedit. Veritatis voluptates cumque distinctio,
-      ipsum voluptatem esse debitis soluta!
-    </p>
+      <p>Please make sure you</p>
+      <p>1. Sumarrise your email in the subject</p>
+      <p>2. Write concisely. For example,</p>
+      <div class="text-gray-600 text-sm space-y-2">
+        <p>to: easypeasy</p>
+        <p>
+          subject: [role] with [past] experience would like to help out with
+          [task or idea] for [time] a week
+        </p>
+        <p>
+          Hey! easypeasy really changed my life and I'd love to help out. I'm a
+          [role] with a background in [the past] and think that I can help out
+          doing [task or idea that might help.]
+        </p>
+        <p>
+          I'm available to help between [time] on [days], and can meet any time
+          that suits you, and have gotten started doing [task].
+        </p>
+
+        <p>Wishing you well, [you]</p>
+      </div>
+      <p>
+        For pretty much everything, please email <strong class="font-bold">
+          hello[at][domain name].org</strong
+        >
+      </p>
+
+      <p>
+        ... but if you've got an opportunity you feel needs priority attention,
+        like being a celebrity, government department, or anything else huge --
+        please email <strong class="font-bold">
+          youdontunderstand[at][domain name].org</strong
+        >
+      </p>
+
+      <p>
+        We'll try answering all emails as fast as we can, so we ask you please
+        respect these sorting systems. We're only human!
+      </p>
+    </div>
   </section>
 
   <section
-    class="mt-8 lg:mt-16 space-y-2 flex flex-col md:flex-row"
+    class="mt-8 lg:mt-16 space-y-4 flex flex-col md:flex-row"
     id="getting-involved"
   >
     <div>
       <header>
         <h2 class="text-3xl font-semibold">Getting Involved</h2>
       </header>
-      <p class="text-lg">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore qui
-        aperiam ipsum, dolores earum consequuntur aliquam, aliquid possimus
-        illum consequatur debitis sunt! Earum commodi ex, iste deleniti quisquam
-        neque?
-      </p>
+      <div class="text-lg space-y-4">
+        <p class="text-lg">
+          Help spreading the easypeasy message by taking actions online, offline
+          and locally.
+        </p>
+
+        <p class="text-lg">Letting people know about easypeasy</p>
+
+        <p class="text-lg">
+          Having conversations with people about pornography
+        </p>
+
+        <p class="text-lg">
+          Putting up posters and campaigning for sex education programs.
+        </p>
+
+        <p class="text-lg">
+          Together, we can unironically make a difference :)
+        </p>
+
+        <a
+          class="items-center justify-center max-w-xs mx-auto font-medium rounded-xl text-black focus-visible:outline-white focus:outline-none inline-flex bg-white border-2 duration-200 focus-visible:ring-black hover:bg-transparent lg:w-auto px-16 py-3 text-center w-full border-black"
+          href="https://easypeasymethod.org/"
+        >
+          getting involved
+        </a>
+      </div>
     </div>
     <div>
-      <div class="h-96 w-96 bg-pink-900"></div>
+      <img
+        src="./img/backstage/leafs.jpg"
+        class="w-[300] h-[300] mx-auto block"
+      />
+
+      <img
+        src="./img/backstage/leafs.jpg"
+        class="w-[300] h-[300] mx-auto md:ml-4 mt-2 hidden md:block"
+      />
     </div>
   </section>
 
   <section class="mt-8 lg:mt-16" id="media">
     <header><h2 class="text-3xl font-semibold">Media</h2></header>
     <p class="text-lg">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto sequi
-      ducimus dignissimos sunt rem, totam dolor maiores nemo suscipit voluptate
-      optio, quae officia a aut in recusandae amet minus iure? Lorem ipsum dolor
-      sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint
-      ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim
-      cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
-      aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud
-      officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
-      reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
-      voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem
-      sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur
-      duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-      consectetur et est culpa et culpa duis.
+      For media inquiries, please contact <strong class="font-bold strong"
+        >media+easypeasy@[peaceful foundation domain name]
+      </strong>
     </p>
   </section>
 
   <section class="mt-8 lg:mt-16" id="history">
     <header><h2 class="text-3xl font-semibold">History</h2></header>
-    <p class="text-lg">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto sequi
-      ducimus dignissimos sunt rem, totam dolor maiores nemo suscipit voluptate
-      optio, quae officia a aut in recusandae amet minus iure? Lorem ipsum dolor
-      sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint
-      ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim
-      cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
-      aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud
-      officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
-      reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
-      voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem
-      sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur
-      duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-      consectetur et est culpa et culpa duis.
-    </p>
+    <div class="text-lg space-y-4">
+      <p class="text-lg">
+        <a href="https://fraserpatterson.au/" class="italic underline">Fraser</a
+        > - After failing to quit pornography about a year using willpower, I stumbled
+        upon a obscure pornography adaption of Allen Carr's EasyWay on Google Sites.
+        Anyone who reads easypeasy will understand that it changed my life completely.
+      </p>
+      <p>
+        After about six months of being free, and trying and failing to convince
+        people how truly wonderful life is without pornography, I decided to
+        rewrite the book to fix the massive amount of spelling and grammatical
+        mistakes.
+      </p>
+
+      <p>
+        This slowly turned into a somewhat rewritten version of the book,
+        combining paragraph upon paragraph to make it easier (and quicker!) to
+        read.
+      </p>
+
+      <p>
+        The first version of easypeasy would <a
+          href="https://snuggy.gitlab.io/easypeasy-web/"
+          class="italic underline"
+          >automatically compile a PDF using LaTeX
+        </a> and put it on a very simple website.
+      </p>
+
+      <p>
+        I only posted on reddit in a couple of places, where it's steadily grown
+        using word of mouth, because it works!
+      </p>
+      <img src="./img/backstage/easypeasy-history.png" alt="" />
+      <figcaption class="text-center text-sm text-gray-700">
+        Overview of the origins of easypeasy.
+      </figcaption>
+      <p>
+        Since then, it's steadily grown to 70k monthly visitors, simply through
+        word of mouth. I'm just happy that so many people have found freedom.
+        (... but I'm not going stop until everyone has!)
+      </p>
+
+      <p>
+        At present, it's written in R Markdown and renders as a book using
+        <a href="https://bookdown.org/home/" class="underline"> bookdown</a>,
+        and receives around 70k people visiting it per month.
+      </p>
+
+      <p>
+        I have a couple of ideas that will make the book even more popular, and
+        get people working together in their local communities, I can't wait!
+      </p>
+    </div>
   </section>
 </main>
 
