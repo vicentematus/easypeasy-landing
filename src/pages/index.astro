@@ -53,3 +53,21 @@ import { AstroSeo } from "@astrolib/seo";
 	<Cta />
 	<Footer />
 </BaseLayout>
+
+<script>
+	import Toastify from "toastify-js";
+
+	const toast = Toastify({
+		text: "You are not being tracked. No cookies, zero personal information. like it should be. you can find our public anonymous analytics here too. peace!",
+		gravity: "bottom",
+		close: true,
+		position: "center",
+		duration: 0,
+		style: {
+			background: "black",
+		},
+		onClick: function () {
+			toast.hideToast();
+		},
+	}).showToast();
+</script>
